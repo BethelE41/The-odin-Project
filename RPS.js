@@ -12,3 +12,12 @@ function getHumanChoice() {
 }
 let humanScore = 0;
 let computerScore = 0;
+
+function humanChoiceChecker(getHumanChoice) {
+  if (typeof getHumanChoice != "string") {
+    console.log("Invalid input!!");
+    return;
+  }
+  const changeTracker = getHumanChoice.toLowerCase();
+  return changeTracker;
+}
