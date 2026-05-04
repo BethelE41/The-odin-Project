@@ -45,3 +45,15 @@ function playRound(humanChoice, computerChoice) {
     console.log("You lose! Scissors beats Paper");
   }
 }
+function playGame() {
+  let i = 1;
+  while (i <= 5) {
+    const humanSelection = humanChoiceChecker(getHumanChoice());
+    const compuetrSelection = getComputerChoice();
+    playRound(humanSelection, compuetrSelection);
+    i++;
+  }
+  console.log("Final score :");
+  console.log("Human " + humanScore + "-" + computerScore + "Computer");
+  console.log("You win the game!");
+}
