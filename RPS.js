@@ -57,3 +57,4 @@ function playGame() {
   console.log("Human " + humanScore + "-" + computerScore + "Computer");
   console.log("You win the game!");
 }
+playGame();
