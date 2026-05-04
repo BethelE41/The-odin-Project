@@ -21,3 +21,27 @@ function humanChoiceChecker(getHumanChoice) {
   const changeTracker = getHumanChoice.toLowerCase();
   return changeTracker;
 }
+
+function playRound(humanChoice, computerChoice) {
+  if (computerChoice == humanChoice) {
+    console.log("You choose the same thing there is no winner!");
+  } else if (humanChoice == "rock" && computerChoice == "paper") {
+    computerScore++;
+    console.log("You lose! Paper beats Rock");
+  } else if (humanChoice == "rock" && computerChoice == "scissors") {
+    humanScore++;
+    console.log("You win! Rock beats Scissors");
+  } else if (humanChoice == "paper" && computerChoice == "rock") {
+    humanScore++;
+    console.log("You win! Paper beats Rock");
+  } else if (humanChoice == "paper" && computerChoice == "scissors") {
+    computerScore++;
+    console.log("You lose! Scissors beats Paper");
+  } else if (humanChoice == "scissors" && computerChoice == "rock") {
+    computerScore++;
+    console.log("You lose! Rock beats Scissors");
+  } else {
+    computerScore++;
+    console.log("You lose! Scissors beats Paper");
+  }
+}
