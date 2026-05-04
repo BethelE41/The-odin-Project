@@ -6,3 +6,7 @@ function getComputerChoice() {
   const guse = randomChoice[randomIndex];
   return guse;
 }
+function getHumanChoice() {
+  let select = prompt("Choose from Rock,Paper,Scissors!");
+  return select;
+}
